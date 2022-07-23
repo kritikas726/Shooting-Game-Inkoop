@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: aqua;
+  background-color: red;
   flex-direction: column;
 }
 
@@ -11,29 +11,31 @@ body {
 
 .main-container {
   width: 60%;
-  background-color: aquamarine;
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 .players {
   width: 90%;
-  padding: 1vh;
   margin: 2vh auto;
   justify-content: space-between;
-  background-color: blue;
   display: flex;
 }
 .player {
-  width: 30%;
   margin: 1vh;
-  background-color: bisque;
+  width: 25%;
+  background-color: white;
+  border: 3px solid black;
   text-align: center;
   font: 3vh bolder;
 }
+.player h2,
+h1 {
+  margin: 1vh;
+}
 .button {
+  width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: chartreuse;
   margin: 5vh auto;
 }
 button {
@@ -41,14 +43,14 @@ button {
   margin: 1vh 2vh;
   width: 20%;
   border: 0;
-  background-color: red;
+  background-color: black;
   color: white;
   border-radius: 1vh;
   font: 4vh bolder;
   cursor: pointer;
 }
 .scoreboard {
-  background-color: blueviolet;
+  background-color: white;
   padding: 2vh;
   margin: 2vh auto;
   border: 5px solid black;
@@ -60,14 +62,14 @@ button {
   display: flex;
   justify-content: space-evenly;
   margin: 1vh auto;
-  background-color: brown;
   padding: 1vh;
 }
 .player-head {
   font: 4vh bolder;
   width: 30%;
-  background-color: yellowgreen;
+  background-color: black;
   text-align: center;
+  color: white;
   margin: 1vh;
   padding: 1vh;
 }
@@ -75,9 +77,10 @@ button {
   padding: 1vh;
   font: 4vh bolder;
   width: 40%;
-  background-color: yellow;
+  background-color: black;
   text-align: center;
   margin: 1vh;
+  color: white;
 }
 #result {
   text-align: center;

@@ -38,16 +38,22 @@ function shoot() {
   if (player1Score == 3) {
     document.getElementById("result").innerText = "Player 1 wins!!!";
     gameOver();
+    console.log("Player 1 wins");
   } else if (player2Score == 3) {
     document.getElementById("result").innerText = "Player 2 wins!!!";
+    console.log("Player 2 wins");
+
     gameOver();
   } else if (roundCounter > 5) {
     if (player1Score > player2Score) {
       document.getElementById("result").innerText = "Player 1 wins!!!";
+      console.log("Player 1 wins");
     } else if (player1Score < player2Score) {
       document.getElementById("result").innerText = "Player 2 wins!!!";
+      console.log("Player 2 wins");
     } else {
       document.getElementById("result").innerText = "Match draw";
+      console.log("Match draw");
     }
     gameOver();
   }
