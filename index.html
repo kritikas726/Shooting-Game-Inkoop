@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--Main Container starts-->
 
+    <div class="main-container">
+      <!--Button starts-->
+
+      <div class="button">
+        <button onclick="shoot()" id="shoot">SHOOT</button>
+        <button onclick="history.go(0)">RESET</button>
+      </div>
+
+      <!--Button ends-->
+
+      <!--Game Area starts-->
+
+      <div class="players">
+        <div class="player">
+          <h2>Player 1 &gt</h2>
+          <h1 id="fire-player1"></h1>
+        </div>
+        <div class="player">
+          <h2>&lt Player 2</h2>
+          <h1 id="fire-player2"></h1>
+        </div>
+      </div>
+
+      <!--Scoreboard starts-->
+
+      <div class="scoreboard">
+        Scoreboard
+        <div class="player-score">
+          <div class="player-head">Player 1 Winings</div>
+          <div class="playerx-score" id="player1-score">0</div>
+        </div>
+        <div class="player-score">
+          <div class="player-head">Player 2 Winings</div>
+          <div class="playerx-score" id="player2-score">0</div>
+        </div>
+      </div>
+
+      <h1 id="result"></h1>
+
+      <!--Scoreboard ends-->
+
+      <!--Game Area ends-->
+    </div>
+
+    <!--Main Container ends-->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
